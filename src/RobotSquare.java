@@ -10,14 +10,18 @@ import org.jointheleague.graphical.robot.Robot;
 public class RobotSquare {
     public static void main(String[] args) throws Exception {
  
-    	// 1. Make a new Robot
-
-
+    	// 1. Make a new RobotSquare
+    
+    	Robot robot =	new Robot();
+   
+   
         // 3. Put the robot's pen down
-
+    robot.setPenWidth(200);
+    	robot.setPenColor(255, 187, 218);
+    robot.penDown();
 
         // 6. Make the robot move as fast as possible
-
+robot.setSpeed(10000000);
 
         // 5. Do everything below here 4 times
 
@@ -26,7 +30,11 @@ public class RobotSquare {
 
 
         //         4. Turn the robot 90 degrees to the right (90 degrees)
+for(int i=0;i<360; i++) {
+robot.turn(1);
+robot.move(5);
 
 
     }
+}
 }
